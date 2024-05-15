@@ -6,13 +6,13 @@
 /*   By: jojeda-m <jojeda-m@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 13:18:45 by jojeda-m          #+#    #+#             */
-/*   Updated: 2024/05/13 17:28:41 by jojeda-m         ###   ########.fr       */
+/*   Updated: 2024/05/15 07:58:49 by jojeda-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
-int ft_pfputchar(char c)
+int	ft_pfputchar(char c)
 {
-    return (write(1, &c, 1));
+	return (write(1, &c, 1));
 }
