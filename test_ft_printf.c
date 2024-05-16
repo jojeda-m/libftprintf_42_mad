@@ -1,34 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_pfputstr.c                                      :+:      :+:    :+:   */
+/*   test_ft_printf.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jojeda-m <jojeda-m@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/13 13:21:26 by jojeda-m          #+#    #+#             */
-/*   Updated: 2024/05/16 12:30:52 by jojeda-m         ###   ########.fr       */
+/*   Created: 2024/05/16 12:06:25 by jojeda-m          #+#    #+#             */
+/*   Updated: 2024/05/17 00:08:49 by jojeda-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
-int	ft_pfputstr(char *str)
+int	main(void)
 {
-	int	i;
+	char	c;
+	char	*str;
+	int		n;
+	int		hex;
 
-	if (!str)
-	{
-		i = 6;
-		write(1, "(null)", i);
-	}
-	else
-	{
-		i = 0;
-		while (str[i] != '\0')
-		{
-			write(1, &str[i], 1);
-			i++;
-		}
-	}
-	return (i);
+	c = '\0';
+	str = NULL;
+	n = 0;
+	hex = 0xFFFFFED4;
+
+	ft_printf("Resultados ft_printf\n");
+	ft_printf("Char: %c\nString: %s\nNumber: %d\nHex_Up: %X\nHex_low: %x\nHextoi: %i\n\n",
+			c, str, n, hex, hex, hex);
+	printf("Resultados printf Original\n");
+	printf("Char: %c\nString: %s\nNumber: %d\nHex_Up: %X\nHex_low: %x\nHextoi: %i\n", c,
+			str, n, hex, hex, hex);
+	return (0);
 }

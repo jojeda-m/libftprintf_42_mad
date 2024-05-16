@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_intlength.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jojeda-m <jojeda-m@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jojeda-m <jojeda-m@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/21 13:15:13 by jojeda-m          #+#    #+#             */
-/*   Updated: 2024/04/26 14:48:20 by jojeda-m         ###   ########.fr       */
+/*   Created: 2024/05/16 22:55:41 by jojeda-m          #+#    #+#             */
+/*   Updated: 2024/05/17 00:13:24 by jojeda-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libftprintf.h"
 
-void	ft_putchar_fd(char c, int fd)
+int	ft_intlength(int n)
 {
-	write(fd, &c, 1);
+	int	length;
+
+	length = 0;
+	if (n <= 0)
+		length++;
+	while (n != 0)
+	{
+		length++;
+		n /= 10;
+	}
+	return (length);
 }
