@@ -6,7 +6,7 @@
 /*   By: jojeda-m <jojeda-m@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 13:21:26 by jojeda-m          #+#    #+#             */
-/*   Updated: 2024/05/16 12:30:52 by jojeda-m         ###   ########.fr       */
+/*   Updated: 2024/05/21 13:03:56 by jojeda-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,21 @@
 
 int	ft_pfputstr(char *str)
 {
-	int	i;
+	int	len;
 
 	if (!str)
 	{
-		i = 6;
-		write(1, "(null)", i);
+		len = 6;
+		write(1, "(null)", len);
 	}
 	else
 	{
-		i = 0;
-		while (str[i] != '\0')
+		len = 0;
+		while (str[len])
 		{
-			write(1, &str[i], 1);
-			i++;
+			ft_pfputchar(str[len]);
+			len++;
 		}
 	}
-	return (i);
+	return (len);
 }

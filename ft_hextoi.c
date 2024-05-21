@@ -6,7 +6,7 @@
 /*   By: jojeda-m <jojeda-m@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 10:28:55 by jojeda-m          #+#    #+#             */
-/*   Updated: 2024/05/21 05:54:57 by jojeda-m         ###   ########.fr       */
+/*   Updated: 2024/05/21 13:21:24 by jojeda-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,3 @@ int	ft_hextoi(int n)
 	ft_pfputnbr(decimal);
 	return (ft_nbrlen(decimal));
 }
-

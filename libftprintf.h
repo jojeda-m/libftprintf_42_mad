@@ -6,7 +6,7 @@
 /*   By: jojeda-m <jojeda-m@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/08 12:01:44 by jojeda-m          #+#    #+#             */
-/*   Updated: 2024/05/21 06:01:56 by jojeda-m         ###   ########.fr       */
+/*   Updated: 2024/05/21 13:19:36 by jojeda-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 # include <string.h>
 # include <limits.h>
 # include <stdarg.h>
+# include <stdint.h>
 
 // Mandatory
 int	ft_printf(const char *format, ...);
@@ -30,6 +31,7 @@ int	ft_pfputnbr(int n);
 int	ft_itohex(unsigned int n, int low_up);
 int	ft_nbrlen(long n);
 int	ft_hextoi(int n);
-int ft_unsignednbr(int n);
+int	ft_unsignednbr(int n);
+int	ft_pfpointer(void *ptr);
 
 #endif
