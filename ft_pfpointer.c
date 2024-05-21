@@ -6,7 +6,7 @@
 /*   By: jojeda-m <jojeda-m@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 12:59:19 by jojeda-m          #+#    #+#             */
-/*   Updated: 2024/05/21 17:52:42 by jojeda-m         ###   ########.fr       */
+/*   Updated: 2024/05/21 23:00:21 by jojeda-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,10 @@ int	ft_pfpointer(void *pointer)
 {
 	int	printed;
 
+	if (pointer == NULL)
+		return (ft_pfputstr("(nil)"));
 	printed = 0;
 	printed += ft_pfputstr("0x");
-	if (pointer == NULL)
-		printed += ft_pfputchar('0');
-	else
-		printed += ft_ptr_addr((uintptr_t)pointer);
+	printed += ft_ptr_addr((uintptr_t)pointer);
 	return (printed);
 }
