@@ -6,7 +6,7 @@
 /*   By: jojeda-m <jojeda-m@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 13:48:45 by jojeda-m          #+#    #+#             */
-/*   Updated: 2024/05/16 22:52:25 by jojeda-m         ###   ########.fr       */
+/*   Updated: 2024/05/21 05:50:29 by jojeda-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_parse(const char *format, va_list args, int *printed)
 	else if (format[1] == 'd')
 		*printed += ft_pfputnbr(va_arg(args, int));
 	else if (format[1] == 'i')
-		*printed += ft_int_type(va_arg(args, int));
+		*printed += ft_hextoi(va_arg(args, int));
 	else if (format[1] == 'u')
 		*printed += ft_pfputnbr(va_arg(args, unsigned int));
 	else if (format[1] == 'x')

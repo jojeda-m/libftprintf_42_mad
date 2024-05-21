@@ -6,7 +6,7 @@
 #    By: jojeda-m <jojeda-m@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/13 09:45:24 by jojeda-m          #+#    #+#              #
-#    Updated: 2024/05/21 05:42:43 by jojeda-m         ###   ########.fr        #
+#    Updated: 2024/05/21 05:56:18 by jojeda-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,8 +26,7 @@ SRC_MAIN	:=\
 			  ft_pfputnbr.c\
 			  ft_itohex.c\
 			  ft_nbrlen.c\
-			  ft_int_type.c
-
+			  ft_hextoi.c
 
 OBJ_MAIN	:= $(SRC_MAIN:.c=.o)
 
