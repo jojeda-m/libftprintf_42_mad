@@ -6,7 +6,7 @@
 #    By: jojeda-m <jojeda-m@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/13 09:45:24 by jojeda-m          #+#    #+#              #
-#    Updated: 2024/05/21 12:47:17 by jojeda-m         ###   ########.fr        #
+#    Updated: 2024/05/21 13:30:25 by jojeda-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,6 @@ SRC_MAIN	:=\
 			  ft_pfputnbr.c\
 			  ft_itohex.c\
 			  ft_nbrlen.c\
-			  ft_hextoi.c\
 			  ft_unsignednbr.c\
 			  ft_pfpointer.c
 
