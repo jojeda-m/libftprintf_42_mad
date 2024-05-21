@@ -6,7 +6,7 @@
 /*   By: jojeda-m <jojeda-m@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 13:48:45 by jojeda-m          #+#    #+#             */
-/*   Updated: 2024/05/21 13:07:26 by jojeda-m         ###   ########.fr       */
+/*   Updated: 2024/05/21 15:12:01 by jojeda-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	ft_parse(const char *format, va_list args, int *printed)
 	else if (format[1] == 'X')
 		*printed += ft_itohex(va_arg(args, int), 1);
 	else if (format[1] == '%')
-		*printed += write(1, "%", 1);
+		*printed += ft_pfputchar('%');
 	else
 		n = 1;
 	return (n);
