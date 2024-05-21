@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_intlength.c                                     :+:      :+:    :+:   */
+/*   ft_nbrlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jojeda-m <jojeda-m@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/16 22:55:41 by jojeda-m          #+#    #+#             */
-/*   Updated: 2024/05/17 00:13:24 by jojeda-m         ###   ########.fr       */
+/*   Created: 2024/05/20 18:14:51 by jojeda-m          #+#    #+#             */
+/*   Updated: 2024/05/21 04:41:58 by jojeda-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
-int	ft_intlength(int n)
+int	ft_nbrlen(long n)
 {
 	int	length;
 
@@ -26,3 +26,4 @@ int	ft_intlength(int n)
 	}
 	return (length);
 }
+
